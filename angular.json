@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "cdp-poc"
+    }
+  },
+  "defaultProject": "cdp-poc",
+  "cli": {
+    "analytics": "1c9f372a-82fe-4eb3-a5c1-2225ca443e33"
+  }
 }
