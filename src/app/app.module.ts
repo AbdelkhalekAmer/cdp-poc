@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { PocRendererComponent } from './poc-renderer/poc-renderer.component';
 
 import {PocRendererDirective} from './Directives/poc-renderer.directive';
+import { FirstComponent } from './first/first.component';
+import { SecondComponent } from './second/second.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PocRendererComponent,
-    PocRendererDirective
+    PocRendererDirective,
+    FirstComponent,
+    SecondComponent
   ],
   imports: [
     BrowserModule,

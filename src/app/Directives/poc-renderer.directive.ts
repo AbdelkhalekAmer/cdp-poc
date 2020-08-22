@@ -8,7 +8,7 @@ export class PocRendererDirective implements OnInit {
 
     ngOnInit(): void {
         const div = this.renderer.createElement('div');
-        const text = this.renderer.createText('Hello world!');
+        const text = this.renderer.createText('Text added by Renderer2');
         this.renderer.appendChild(div, text);
         this.renderer.appendChild(this.el.nativeElement, div);
     }
