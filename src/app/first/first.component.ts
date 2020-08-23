@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, NavigationStart, Event as NavigationEvent, RoutesRecognized } from '@angular/router';
+
 
 @Component({
   selector: 'app-first',
@@ -8,30 +8,7 @@ import { Router, NavigationStart, Event as NavigationEvent, RoutesRecognized } f
 })
 export class FirstComponent implements OnInit {
 
-  constructor(private router: Router) {
-    this.router.events
-      .subscribe(
-        (event) => {
-          if (event instanceof NavigationStart) {
-            console.log('NavigationStart');
-          }
-
-          if (event instanceof RoutesRecognized) {
-            console.log('RoutesRecognized');
-          }
-
-          if (event instanceof NavigationStart) {
-            console.log(event);
-          }
-
-          if (event instanceof NavigationStart) {
-            console.log(event);
-          }
-
-          if (event instanceof NavigationStart) {
-            console.log(event);
-          }
-        });
+  constructor() {
   }
 
   ngOnInit(): void {
